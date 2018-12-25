@@ -43,3 +43,27 @@ input{
 	-moz-user-select: text;
 	-ms-user-select: text;
 }
+.box{
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+
+	// 水平
+	&.row{
+		flex-direction: row;
+	}
+
+	// 垂直
+	&.column{
+		flex-direction: column;
+	}
+
+	// 水平垂直都居中
+	&.centre{
+		justify-content: center;
+	}
+	// 1份
+	.flex1{
+		flex: 1;
+	}
+}

@@ -5,7 +5,9 @@
         v-for="item in typeList"
         :key="item.id"
         :label="item.name"
-        :name="item.id.toString()">{{item.name}}</el-tab-pane>
+        :name="item.id.toString()">
+          <card-list></card-list>
+        </el-tab-pane>
      </el-tabs>
   </div>
 </template>
@@ -23,12 +25,16 @@ const typeList = [{
   id: 3,
   name: 'UI设计'
 }]
+import CardList from '@/views/home/CardList'
 export default {
   data () {
     return {
       activeName: '0',
       typeList
     }
+  },
+  components: {
+    CardList
   },
   methods: {
     handleClick (tab, event) {
@@ -41,5 +47,8 @@ export default {
 .home-menu{
   width: 1000px;
   margin: auto;
+  .el-tabs__nav{
+    margin: auto;
+  }
 }
 </style>

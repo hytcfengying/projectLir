@@ -37,6 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .home-header{
+  background-color: #dcdcdc;
   height: 40px;
   line-height: 40px;
   .logo{

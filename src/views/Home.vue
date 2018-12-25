@@ -2,21 +2,21 @@
   <div>
     <home-header></home-header>
     <search></search>
+    <type-menu></type-menu>
     <home-menu></home-menu>
-    <card-list></card-list>
   </div>
 </template>
 
 <script>
 import Search from '@/views/home/Search'
 import HomeMenu from '@/views/home/Menu'
-import CardList from '@/views/home/CardList'
+import TypeMenu from '@/views/home/TypeMenu'
 import HomeHeader from '@/views/home/Header'
 export default {
   components: {
     Search,
     HomeMenu,
-    CardList,
+    TypeMenu,
     HomeHeader
   }
 }

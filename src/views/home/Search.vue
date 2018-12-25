@@ -20,13 +20,21 @@ export default {
 
 <style lang="scss" scoped>
 .home-search{
-width: 100%;
-height: 400px;
-padding-top: 150px;
-background-color: rgb(224, 184, 123);
-.area{
-        width: 80%;
-        margin: auto;
-}
+    width: 100%;
+    height: 400px;
+    padding-top: 150px;
+    background-color: rgb(224, 184, 123);
+    .area{
+            width: 80%;
+            margin: auto;
+    }
+    .el-input-group__append {
+        & > button{
+            background-color: #17B5F9;
+        }
+        .el-icon-search{
+            color: #ffffff;
+        }
+    }
 }
 </style>
