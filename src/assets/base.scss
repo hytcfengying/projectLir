@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-touch-callout:none;  /*系统默认菜单被禁用*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -khtml-user-select:none; /*早期浏览器*/
+    -moz-user-select:none;/*火狐*/
+    -ms-user-select:none; /*IE10*/
+    user-select:none;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	color: #8684BC;
+	text-decoration: none;
+}
+a:active, a:hover, a:focus{
+	opacity: 0.8;
+}
+body{
+	color: #4a4a4a;
+	background: #fff;
+	font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+}
+.clearfix:before,
+.clearfix:after {
+		display: table;
+		content: "";
+}
+
+.clearfix:after {
+		clear: both
+}
+input{
+	outline: none;
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+}
